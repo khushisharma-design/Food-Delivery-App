@@ -11,12 +11,12 @@ const modal = document.getElementById('checkoutModal')
 const closeModal = document.getElementById('closeModal')
 
 const items = [
-  {id:1,name:'Espresso',price:12.5,emoji:'☕',desc:'Rich, concentrated shot with a velvety crema.'},
-  {id:2,name:'Cappuccino',price:18.0,emoji:'☕',desc:'Classic cappuccino with steamed milk and a dusting of cocoa.'},
-  {id:3,name:'Latte',price:19.5,emoji:'🥛',desc:'Smooth espresso with creamy milk and a delicate foam.'},
-  {id:4,name:'Cold Brew',price:20.0,emoji:'🧊',desc:'Slow-steeped coffee served chilled for a clean finish.'},
-  {id:5,name:'Matcha Latte',price:21.0,emoji:'🍵',desc:'Ceremonial matcha blended with silky milk and honey notes.'},
-  {id:6,name:'Almond Croissant',price:14.5,emoji:'🥐',desc:'Flaky croissant filled with almond cream and toasted almonds.'}
+  {id:1,name:'Espresso',price:12.5,emoji:'☕',desc:'Rich, concentrated shot with a velvety crema.',image:null},
+  {id:2,name:'Cappuccino',price:18.0,emoji:'☕',desc:'Classic cappuccino with steamed milk and a dusting of cocoa.',image:'Cappuccino.webp'},
+  {id:3,name:'Latte',price:19.5,emoji:'🥛',desc:'Smooth espresso with creamy milk and a delicate foam.',image:null},
+  {id:4,name:'Cold Brew',price:20.0,emoji:'🧊',desc:'Slow-steeped coffee served chilled for a clean finish.',image:null},
+  {id:5,name:'Matcha Latte',price:21.0,emoji:'🍵',desc:'Ceremonial matcha blended with silky milk and honey notes.',image:null},
+  {id:6,name:'Almond Croissant',price:14.5,emoji:'🥐',desc:'Flaky croissant filled with almond cream and toasted almonds.',image:null}
 ]
 
 const cart = []
@@ -26,8 +26,9 @@ function renderMenu(){
   items.forEach(it=>{
     const el = document.createElement('article')
     el.className = 'card'
+    const thumbContent = it.image ? `<img src="${it.image}" alt="${it.name}" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">` : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#f2e8e4;border-radius:18px;font-size:3rem;">${it.emoji}</div>`
     el.innerHTML = `
-      <div class="thumb">${it.emoji}</div>
+      <div class="thumb">${thumbContent}</div>
       <h3 class="item-name">${it.name}</h3>
       <p class="item-desc">${it.desc}</p>
       <div class="row">

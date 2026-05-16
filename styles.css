@@ -2,6 +2,12 @@
 *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
 body{margin:0;background:var(--bg);color:#1f1f1f}
 .top{display:flex;justify-content:space-between;align-items:flex-end;padding:1.25rem 2rem;background:linear-gradient(90deg,#fff, #f6ede8);border-bottom:1px solid #ede3db}
+.hero{position:relative;height:380px;background:linear-gradient(135deg,#6b4f4f,#8b6969);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-image{position:absolute;width:100%;height:100%;object-fit:cover;opacity:.8}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(107,79,79,.5),rgba(139,105,105,.4))}
+.hero-content{position:relative;text-align:center;color:#fff;z-index:2}
+.hero-content h2{margin:0;font-size:2rem;letter-spacing:.03em}
+.hero-content p{margin:.75rem 0 0;font-size:1.15rem;max-width:500px}
 .top h1{margin:0;font-size:1.5rem;letter-spacing:.02em}
 .tagline{margin:.35rem 0 0;color:var(--muted);font-size:.95rem;max-width:320px}
 .cart-btn{background:var(--accent);color:#fff;padding:.65rem 1rem;border-radius:999px;cursor:pointer;transition:transform .2s ease}
