@@ -25,10 +25,12 @@ function renderMenu(){
   menuEl.innerHTML = ''
   items.forEach(it=>{
     const el = document.createElement('article')
-    el.className = 'card'
+    el.className = it.image ? 'card featured' : 'card'
     const thumbContent = it.image ? `<img src="${it.image}" alt="${it.name}" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">` : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#f2e8e4;border-radius:18px;font-size:3rem;">${it.emoji}</div>`
+    const badge = it.image ? '<div class="badge">Featured</div>' : ''
     el.innerHTML = `
       <div class="thumb">${thumbContent}</div>
+      ${badge}
       <h3 class="item-name">${it.name}</h3>
       <p class="item-desc">${it.desc}</p>
       <div class="row">
