@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrewHouse — Coffee Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>BrewHouse</h1>
+      <p class="tagline">Premium coffee, artisanal pastries, and fast service.</p>
+    </div>
+    <div class="cart-btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</div>
+  </header>
+
+  <main class="container">
+    <section class="menu-panel">
+      <div class="menu-header">
+        <h2>Fresh Menu</h2>
+        <p>Choose your drink, customize your order, and enjoy a café-style experience.</p>
+      </div>
+      <div class="menu" id="menu"></div>
+    </section>
+
+    <aside class="cart" id="cart">
+      <h2>Your Order</h2>
+      <p class="cart-note">Add items to the cart and adjust quantities before checkout.</p>
+      <ul id="cartList"></ul>
+      <div class="cart-summary">
+        <div><span>Subtotal</span><span id="cartSubtotal">AED 0.00</span></div>
+        <div><span>Service Fee</span><span id="serviceFee">AED 0.00</span></div>
+        <div><strong>Total</strong><strong id="cartTotal">AED 0.00</strong></div>
+      </div>
+      <button id="checkoutBtn" class="primary">Place Order</button>
+    </aside>
+  </main>
+
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-content">
+      <h3>Order Confirmed</h3>
+      <p>Your drinks are being prepared. Thank you for ordering from BrewHouse.</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
