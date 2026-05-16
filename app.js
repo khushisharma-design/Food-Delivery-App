@@ -14,7 +14,7 @@ const items = [
   {id:1,name:'Espresso',price:12.5,emoji:'☕',desc:'Rich, concentrated shot with a velvety crema.',image:'espresso.jpeg'},
   {id:2,name:'Cappuccino',price:18.0,emoji:'☕',desc:'Classic cappuccino with steamed milk and a dusting of cocoa.',image:'Cappuccino.webp'},
   {id:3,name:'Latte',price:19.5,emoji:'🥛',desc:'Smooth espresso with creamy milk and a delicate foam.',image:'latte.jpeg'},
-  {id:4,name:'Cold Brew',price:20.0,emoji:'🧊',desc:'Slow-steeped coffee served chilled for a clean finish.',image:null},
+  {id:4,name:'Cold Brew',price:20.0,emoji:'🧊',desc:'Slow-steeped coffee served chilled for a clean finish.',image:'cold brew.jpeg'},
   {id:5,name:'Matcha Latte',price:21.0,emoji:'🍵',desc:'Ceremonial matcha blended with silky milk and honey notes.',image:null},
   {id:6,name:'Almond Croissant',price:14.5,emoji:'🥐',desc:'Flaky croissant filled with almond cream and toasted almonds.',image:null}
 ]
