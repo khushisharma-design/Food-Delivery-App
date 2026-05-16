@@ -16,7 +16,7 @@ const items = [
   {id:3,name:'Latte',price:19.5,emoji:'🥛',desc:'Smooth espresso with creamy milk and a delicate foam.',image:'latte2.jpeg'},
   {id:4,name:'Cold Brew',price:20.0,emoji:'🧊',desc:'Slow-steeped coffee served chilled for a clean finish.',image:'cold brew.jpeg'},
   {id:5,name:'Matcha Latte',price:21.0,emoji:'🍵',desc:'Ceremonial matcha blended with silky milk and honey notes.',image:'matcha latte.jpeg'},
-  {id:6,name:'Almond Croissant',price:14.5,emoji:'🥐',desc:'Flaky croissant filled with almond cream and toasted almonds.',image:null}
+  {id:6,name:'Almond Croissant',price:14.5,emoji:'🥐',desc:'Flaky croissant filled with almond cream and toasted almonds.',image:'almond croissants.jpeg'}
 ]
 
 const cart = []
